@@ -77,6 +77,11 @@ body {
   color: var(--black161);
   opacity: 0.72;
 }
+.black161-82 {
+  /* opacity 82 */
+  color: var(--black161);
+  opacity: 0.82;
+}
 
 .grey-A4A {
   color: var(--grey-A4A);
@@ -123,6 +128,11 @@ h5,
 h6 {
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black161);
 }
 
 // Component
@@ -616,86 +626,83 @@ button {
         }
       }
     }
-
-  
   }
 }
 
-
 // FAQ
 
-  // FAQS
-    .faqs {
-background-color: var(--white);
-      padding: 13.2rem 0rem 13.2rem;
-       background-image: url("/assets/images/grid.svg");
+// FAQS
+.faqs {
+  background-color: var(--white);
+  padding: 13.2rem 0rem 13.2rem;
+  background-image: url("/assets/images/grid.svg");
 
-      .accordion-wrapper {
-        margin-top: 7.2rem;
-        .accordion {
-          cursor: pointer;
-          width: 70rem;
-          text-align: left;
-          position: relative;
-          background: var(--accordion-color);
-          border: 1px solid rgba(0, 0, 0, 0.24);
-          border-radius: 1rem;
-          padding: 2rem;
+  .accordion-wrapper {
+    margin-top: 7.2rem;
+    .accordion {
+      cursor: pointer;
+      width: 70rem;
+      text-align: left;
+      position: relative;
+      background: var(--accordion-color);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      border-radius: 1rem;
+      padding: 2rem;
 
-          font-size: 2.2rem;
+      font-size: 2.2rem;
+      line-height: 3rem;
+      user-select: none;
+
+      max-height: 2.8rem;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin-bottom: 1.2rem;
+      color: var(--black161);
+      font-weight: 500;
+
+      .accordion-icon {
+        transform: rotate(0deg);
+        position: absolute;
+        transition: transform 0.4s;
+        right: 2rem;
+        top: 2.8rem;
+      }
+
+      .panel {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 1rem;
+        opacity: 0;
+
+        p {
+          font-size: 1.8rem;
           line-height: 3rem;
-          user-select: none;
+        }
 
-          max-height: 2.8rem;
-          overflow: hidden;
-          transition: max-height 0.2s ease-out;
-          margin-bottom: 1.2rem;
-          color: var(--black161);
-          font-weight: 500;
+        ul {
+          padding-left: 2rem;
+          margin: 0;
 
-          .accordion-icon {
-            transform: rotate(0deg);
-            position: absolute;
-            transition: transform 0.4s;
-            right: 2rem;
-            top: 2.8rem;
-          }
-
-          .panel {
-            overflow: hidden;
-            width: 100%;
-            margin-top: 1rem;
-            opacity: 0;
-
-            p {
-              font-size: 1.8rem;
-              line-height: 3rem;
-            }
-
-            ul {
-              padding-left: 2rem;
-              margin: 0;
-
-              li {
-                font-size: 1.6rem;
-                line-height: 2.5rem;
-                font-weight: 400;
-                list-style-type: initial;
-              }
-            }
-          }
-
-          &.active {
-            //   background-color: #ccc;
-
-            .accordion-icon {
-              transform: rotate(-180deg);
-            }
-
-            .panel {
-              opacity: 1;
-            }
+          li {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            font-weight: 400;
+            list-style-type: initial;
           }
         }
       }
+
+      &.active {
+        //   background-color: #ccc;
+
+        .accordion-icon {
+          transform: rotate(-180deg);
+        }
+
+        .panel {
+          opacity: 1;
+        }
+      }
     }
+  }
+}
