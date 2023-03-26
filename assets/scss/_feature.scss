@@ -203,6 +203,21 @@
       }
     }
   }
+
+  .cropped {
+    width: 150px; /* width of container */
+    height: 150px; /* height of container */
+    overflow: hidden;
+    border: 5px solid black;
+  }
+
+  .cropped img {
+    margin: -10px 0px 0px -180px;
+  }
+  .happy-banner {
+    height: 470px;
+    overflow: hidden;
+  }
 }
 
 footer {

@@ -778,6 +778,19 @@ button {
   /* identical to box height, or 156% */
   color: var(--white);
 }
+.happy .cropped {
+  width: 150px; /* width of container */
+  height: 150px; /* height of container */
+  overflow: hidden;
+  border: 5px solid black;
+}
+.happy .cropped img {
+  margin: -10px 0px 0px -180px;
+}
+.happy .happy-banner {
+  height: 470px;
+  overflow: hidden;
+}
 
 footer {
   background: #242424;
