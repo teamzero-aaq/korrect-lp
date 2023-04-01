@@ -25,7 +25,8 @@ class Navbar extends HTMLElement {
                     <p>Engage with product updates</p>
                   </div>
                 </li>
-                <li>Pricing</li>
+                <li>
+                <a  href="pricing.html">Pricing</a></li>
                 <li>About</li>
                 <li>Blog</li>
               </ul>
@@ -94,6 +95,26 @@ class Footer extends HTMLElement {
           <p class="link">Contact Us</p>
           <p class="link">Feature Request</p>
           <p class="link">Help Center</p>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-logo">
+        <img src="assets//images/FooterLogo.svg" alt="" />
+        <div class="social">
+          <img src="assets//images/LinkedIN.svg" alt="" />
+          <img src="assets//images/Combined-Shape.svg" alt="" />
+          <img src="assets//images/Instagram.svg" alt="" />
+          <img src="assets//images/Facebook.svg" alt="" />
+        </div>
+      </div>
+      <div class="footer-logo copyright">
+        <p>© 2022 Korrect, a product of Korrect Technologies Pvt Ltd</p>
+        <div class="social security">
+          <p>Security</p>
+          <p>Privacy</p>
+          <p>Terms of Service</p>
+          <p>GDPR Compliance</p>
+          <p>Inactivity Policy</p>
         </div>
       </div>
     </div>

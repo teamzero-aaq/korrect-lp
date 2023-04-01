@@ -31,6 +31,7 @@ html {
 :root {
   --primary: #007c89;
   --black161: #161616;
+  --black242: #242424;
   --bg-color: #f0f7f8;
   --grey-A4A: #a4a4a4;
   --bg-color2: #fef9ec;
@@ -38,6 +39,7 @@ html {
   --white: #ffffff;
   --black211: #211f1a;
   --black333: #333333;
+  --pricing: #b9e0e4;
 }
 
 body {
@@ -698,7 +700,7 @@ button {
 }
 .feedback-reasons .k-grid {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: space-between;
   grid-row-gap: 6.8rem;
   grid-column-gap: 7rem;
@@ -797,24 +799,550 @@ footer {
   padding: 8.2rem 11.1rem 2rem;
   color: white;
 }
-footer .k-row {
+footer .k-container .k-row {
   justify-content: space-between;
   align-items: start;
 }
-footer .k-row .head {
+footer .k-container .k-row .head {
   font-weight: 500;
   font-size: 18px;
   line-height: 18px;
   color: rgba(255, 255, 255, 0.96);
   margin-bottom: 2rem;
 }
-footer .k-row .link {
+footer .k-container .k-row .link {
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.3rem;
   letter-spacing: -0.006em;
   color: rgba(255, 255, 255, 0.72);
   margin-bottom: 1.6rem;
+}
+footer .k-container hr {
+  margin: 6.2rem 0 2.4rem 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.4rem;
+}
+.footer-logo p {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: -0.006em;
+}
+.footer-logo .social {
+  display: flex;
+  gap: 1.6rem;
+}
+.footer-logo .security {
+  gap: 2.4rem;
+}
+
+.copyright {
+  padding-bottom: 6.2rem;
+}
+
+.pricing {
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 18rem 0rem 6.6rem;
+}
+.pricing .k-container .pricing-banner {
+  background: var(--pricing);
+  height: 28.2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.pricing .k-container .pricing-banner .offer {
+  position: absolute;
+  height: 62px;
+  width: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 3rem;
+  left: -6rem;
+  transform: rotate(-45deg);
+  background: #793fd8;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+.pricing .k-container .pricing-banner .lifetime-plan {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+  color: var(--black242);
+  padding: 1rem 0 1rem 0;
+}
+.pricing .k-container .pricing-banner .subtitle {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  color: var(--black242);
+}
+.pricing .k-container .pricing-banner .billing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7rem;
+  padding: 2rem 0 2rem 0;
+}
+.pricing .k-container .pricing-banner .billing p > span {
+  font-weight: 600;
+  font-size: 4.6rem;
+  line-height: 4.6rem;
+  color: var(--black242);
+}
+.pricing .k-container .pricing-banner .billing button {
+  padding: 1.4rem 3rem;
+  height: 4.8rem;
+  background: var(--black161);
+  border-radius: 4rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
+.pricing .k-container .pricing-banner .talk {
+  font-size: 1.6rem;
+  color: var(--black242);
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+.pricing .k-container .free {
+  font-size: 6.2rem;
+  padding: 6.6rem 0;
+}
+.pricing .k-container .free p {
+  padding: 1.2rem 0;
+}
+.pricing .k-container .free .saving {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 3.2rem 0 0 0;
+}
+.pricing .k-container .free .saving p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+}
+.pricing .k-container .free .saving span {
+  color: var(--primary);
+}
+.pricing .k-container .free .switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+.pricing .k-container .free .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.pricing .k-container .free .switch input:checked + .slider {
+  background-color: var(--primary);
+}
+.pricing .k-container .free .switch input:checked + .slider::before {
+  transform: translateX(18px);
+}
+.pricing .k-container .free .switch input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary);
+}
+.pricing .k-container .free .slider {
+  position: absolute;
+  background-color: #ccc;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+.pricing .k-container .free .slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+.pricing .k-container .free .round {
+  border-radius: 34px;
+}
+.pricing .k-container .free .round::before {
+  border-radius: 50%;
+}
+
+.pricing-detail {
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+}
+.pricing-detail .k-container .k-row {
+  align-items: stretch;
+  margin-bottom: 13.2rem;
+  gap: 3.6rem;
+}
+.pricing-detail .k-container .k-row .card {
+  background: rgba(240, 247, 248, 0.8705882353);
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 1rem 1rem 1rem 1rem;
+  flex: 1;
+}
+.pricing-detail .k-container .k-row .card .card-wrap {
+  padding: 4rem 3.2rem;
+  background-color: white;
+  border-radius: 1rem 1rem 0 0;
+}
+.pricing-detail .k-container .k-row .card .card-wrap .title {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  color: var(--primary);
+}
+.pricing-detail .k-container .k-row .card .card-wrap .sub-title {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+  text-align: center;
+  padding: 1.6rem 0 4.4rem 0;
+}
+.pricing-detail .k-container .k-row .card .card-wrap .left {
+  text-align: left;
+  padding: 1.6rem 0 2rem 0 !important;
+}
+.pricing-detail .k-container .k-row .card .card-wrap .free-title {
+  font-size: 4.6rem;
+  line-height: 4.6rem;
+}
+.pricing-detail .k-container .k-row .card .card-wrap .free {
+  padding: 0.8rem 0 3.2rem 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.52);
+}
+.pricing-detail .k-container .k-row .card .card-wrap .get {
+  padding: 1.1rem 9.8rem;
+  background: var(--primary);
+  border-radius: 3.2rem;
+  width: 100%;
+}
+.pricing-detail .k-container .k-row .card .benefits {
+  padding: 3.2rem 3.6rem;
+  background: rgba(240, 247, 248, 0.87);
+  border-radius: 0px 0px 8px 8px;
+}
+.pricing-detail .k-container .k-row .card .benefits .typo {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  margin-bottom: 1.6rem;
+  color: rgba(0, 0, 0, 0.82);
+}
+.pricing-detail .k-container .k-row .border {
+  border: 2px solid var(--primary);
+}
+.pricing-detail .k-container .k-row .pro-border {
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.pricing-detail .k-container .k-row .most-popular {
+  position: absolute;
+  height: 4.8rem;
+  left: -2px;
+  right: -2px;
+  top: -4.8rem;
+  border-radius: 1rem 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  color: white;
+}
+
+.help {
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+.help .bg-1,
+.help .bg-2 {
+  background: #f2f8f9;
+  opacity: 0.42;
+  position: absolute;
+  width: 50%;
+  height: 200%;
+  border-radius: 50%;
+  right: -15%;
+  top: -160%;
+}
+.help .bg-2 {
+  width: 60%;
+  height: 200%;
+  right: -21%;
+  top: 20%;
+}
+.help .k-container {
+  padding: 11.4rem 6.8rem;
+  box-sizing: border-box;
+  background-color: var(--primary);
+  border-radius: 1rem;
+}
+.help .k-container h3 {
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  color: white;
+}
+.help .k-container p {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding: 1.2rem 0 3.2rem 0;
+  color: white;
+}
+.help .k-container button {
+  padding: 1.4rem 3rem;
+  background: #242424;
+  border-radius: 4rem;
+}
+
+.customer {
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+  padding-top: 13.2rem;
+}
+.customer .k-container .txt {
+  font-size: 28px;
+  line-height: 32px;
+  padding-bottom: 5.2rem;
+  text-align: center;
+}
+.customer .k-container .brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7.5rem;
+  padding: 5.2rem 0 0 0;
+}
+
+.review-bg {
+  background-image: url("/assets/images/grid.svg");
+  padding-bottom: 9.2rem;
+}
+
+.pricing-brands {
+  background-color: var(--accordion-color);
+  padding: 8rem 11.2rem;
+}
+.pricing-brands .k-container p {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--black161);
+}
+.pricing-brands .k-container .brands-img {
+  padding-top: 5.5rem;
+}
+
+.plan {
+  padding: 13.2rem 0 0 0;
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+}
+.plan .k-container .k-row {
+  padding-bottom: 7.2rem;
+}
+.plan .k-container .k-row .compare {
+  font-size: 4.2rem;
+  line-height: 5.2rem;
+  letter-spacing: -0.006em;
+  color: var(--black161);
+}
+.plan .k-container .k-row .saving {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+.plan .k-container .k-row .saving p {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  letter-spacing: -0.02em;
+}
+.plan .k-container .k-row .saving span {
+  color: var(--primary);
+}
+.plan .k-container .k-row .saving .switch {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 24px;
+}
+.plan .k-container .k-row .saving .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.plan .k-container .k-row .saving .switch input:checked + .slider {
+  background-color: var(--primary);
+}
+.plan .k-container .k-row .saving .switch input:checked + .slider::before {
+  transform: translateX(18px);
+}
+.plan .k-container .k-row .saving .switch input:focus + .slider {
+  box-shadow: 0 0 1px var(--primary);
+}
+.plan .k-container .k-row .slider {
+  position: absolute;
+  background-color: #ccc;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+.plan .k-container .k-row .slider::before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+.plan .k-container .k-row .round {
+  border-radius: 34px;
+}
+.plan .k-container .k-row .round::before {
+  border-radius: 50%;
+}
+.plan .k-container .faq-options-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  padding-bottom: 5.2rem;
+  gap: 10rem;
+}
+.plan .k-container .faq-options-grid .item-2 {
+  width: 22.2rem;
+}
+.plan .k-container .faq-options-grid .item-3 {
+  width: 17rem;
+}
+.plan .k-container .faq-options-grid .item-4 {
+  width: 20.1rem;
+}
+.plan .k-container .faq-options-grid .community {
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding-bottom: 1.8rem;
+  text-align: center;
+  color: #007c89;
+}
+.plan .k-container .faq-options-grid .free {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
+  padding-bottom: 1.2rem;
+  text-align: center;
+  color: #242424;
+}
+.plan .k-container .faq-options-grid .billing {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.52);
+}
+.plan .k-container .faq-options-grid .btn {
+  padding: 1.4rem 3rem;
+  background: var(--black161);
+  border-radius: 4rem;
+}
+.plan .k-container .faq-options-grid .free-btn {
+  width: 22.2rem;
+}
+.plan .k-container .faq-options-grid .started-btn {
+  width: 16.8rem;
+}
+.plan .k-container .faq-options-grid .sales-btn {
+  width: 17.7rem;
+}
+.plan .k-container .accordion-wrapper .accordion {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  background: var(--bg-color);
+  padding: 1.6rem 0 0 0;
+  font-size: 2.2rem;
+  line-height: 3rem;
+  user-select: none;
+  max-height: 5.4rem;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  margin-bottom: 5.6rem;
+  color: var(--black161);
+  font-weight: 500;
+}
+.plan .k-container .accordion-wrapper .accordion .accordion-icon {
+  transform: rotate(0deg);
+  transition: transform 0.4s;
+}
+.plan .k-container .accordion-wrapper .accordion .panel {
+  background-color: var(--white);
+  overflow: hidden;
+  width: 100%;
+  margin-top: 1rem;
+  opacity: 0;
+}
+.plan .k-container .accordion-wrapper .accordion.active .accordion-icon {
+  transform: rotate(-180deg);
+}
+.plan .k-container .accordion-wrapper .accordion.active .panel {
+  opacity: 1;
+}
+.plan .k-container .faq-options-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 10rem;
+  align-items: center;
+  padding-bottom: 3.6rem;
+}
+.plan .k-container .faq-options-item .item:first-child {
+  padding-left: 1rem;
+}
+.plan .k-container .faq-options-item .item:not(:first-child) {
+  justify-self: center;
+}
+.plan .k-container .first-row {
+  padding-top: 2.8rem;
 }
 
 /*# sourceMappingURL=index.css.map */
