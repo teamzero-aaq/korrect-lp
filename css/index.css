@@ -91,6 +91,10 @@ body {
   font-weight: 500;
 }
 
+.Inter-400 {
+  font-weight: 400;
+}
+
 .Inter-500 {
   font-weight: 500;
 }
@@ -194,7 +198,7 @@ button {
 .navbar {
   height: 8.3rem;
   width: 100%;
-  background-color: var(--bg-color);
+  background-color: var(--white);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -600,6 +604,11 @@ button {
 }
 .faqs .accordion-wrapper .accordion.active .panel {
   opacity: 1;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
 }
 
 .feature-title {
@@ -1343,6 +1352,101 @@ footer .k-container hr {
 }
 .plan .k-container .first-row {
   padding-top: 2.8rem;
+}
+
+.about {
+  width: 100%;
+  background-color: var(--bg-color);
+  background-image: url("/assets/images/grid.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 25rem 0rem 25rem;
+}
+.about .about-title {
+  font-size: 7.2rem;
+  line-height: 8rem;
+  padding: 2rem 0rem 1.2rem;
+}
+
+.our-story {
+  width: 100%;
+  background-color: white;
+  background-image: url("/assets/images/grid.svg");
+  padding: 8rem 0 0 0;
+}
+.our-story br {
+  margin-bottom: 3.2rem !important;
+}
+.our-story .title {
+  padding-bottom: 3.2rem;
+}
+.our-story .story {
+  font-size: 16px;
+  line-height: 24px;
+}
+.our-story .founders {
+  font-size: 18px;
+  line-height: 27px;
+  color: black;
+  padding: 3.2rem 0 0.2rem 0;
+}
+.our-story .co-founder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  padding-bottom: 13.2rem;
+  color: #000000;
+}
+
+.our-values {
+  background-color: var(--bg-color);
+  padding: 9.2rem 0;
+}
+.our-values .k-container .k-row {
+  align-items: start;
+}
+.our-values .k-container .k-row .left {
+  flex: 1;
+  font-size: 6rem;
+  line-height: 5.2rem;
+}
+.our-values .k-container .k-row .right {
+  flex: 1;
+}
+.our-values .k-container .k-row .create {
+  font-size: 32px;
+  line-height: 42px;
+  /* identical to box height, or 131% */
+  letter-spacing: -0.006em;
+}
+.our-values .k-container .k-row .create-sub {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  letter-spacing: -0.006em;
+  padding: 0.6rem 0 4.2rem 0;
+}
+
+.faces {
+  background-color: white;
+  background-image: url("/assets/images/grid.svg");
+  padding: 13.2rem 0;
+}
+.faces .k-container p {
+  font-size: 5.2rem;
+  line-height: 5.8rem;
+  padding-bottom: 6.2rem;
+}
+.faces .k-container p span {
+  color: #a4a4a4;
+}
+.faces .k-container .k-row .founder-name {
+  font-size: 24px;
+  line-height: 32px;
+  padding: 2.4rem 0 1rem 0;
 }
 
 /*# sourceMappingURL=index.css.map */

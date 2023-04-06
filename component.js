@@ -27,7 +27,7 @@ class Navbar extends HTMLElement {
                 </li>
                 <li>
                 <a  href="pricing.html">Pricing</a></li>
-                <li>About</li>
+                <li>  <a  href="about.html">About</a></li>
                 <li>Blog</li>
               </ul>
             </div>
@@ -122,5 +122,33 @@ class Footer extends HTMLElement {
   }
 }
 
+class Happy extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <section class="happy">
+    <div class="k-container">
+      <h2 class="happytitle">Let's make you happy!</h2>
+      <button class="happy-cta">Start Free Trial</button>
+      <div class="chip-container">
+        <p class="chip">
+          <img src="assets/images/Vector.svg" alt="" /> No credit card
+          required
+        </p>
+        <p class="chip">
+          <img src="assets/images/Vector.svg" alt="" /> Feature requests
+        </p>
+        <p class="chip">
+          <img src="assets/images/Vector.svg" alt="" /> Build roadmap
+        </p>
+      </div>
+      <div class="happy-banner">
+        <img src="assets/images/happy-banner.svg" alt="" />
+      </div>
+    </div>
+  </section>`;
+  }
+}
+
 customElements.define("navbar-bar", Navbar);
 customElements.define("footer-bar", Footer);
+customElements.define("happy-bar", Happy);

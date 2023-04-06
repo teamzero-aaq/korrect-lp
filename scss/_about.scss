@@ -1,0 +1,109 @@
+.about {
+  width: 100%;
+  //   height: 100vh;
+  background-color: var(--bg-color);
+  background-image: url("/assets/images/grid.svg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 25rem 0rem 25rem;
+
+  .about-title {
+    font-size: 7.2rem;
+    line-height: 8rem;
+    padding: 2rem 0rem 1.2rem;
+  }
+}
+
+.our-story {
+  width: 100%;
+  //   height: 100vh;
+  background-color: white;
+  background-image: url("/assets/images/grid.svg");
+  padding: 8rem 0 0 0;
+  br {
+    margin-bottom: 3.2rem !important;
+  }
+  .title {
+    padding-bottom: 3.2rem;
+  }
+  .story {
+    // font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .founders {
+    font-size: 18px;
+    line-height: 27px;
+    color: black;
+    padding: 3.2rem 0 0.2rem 0;
+  }
+  .co-founder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    padding-bottom: 13.2rem;
+    color: #000000;
+  }
+}
+
+.our-values {
+  background-color: var(--bg-color);
+  padding: 9.2rem 0;
+
+  .k-container {
+    .k-row {
+      align-items: start;
+      .left {
+        flex: 1;
+        font-size: 6rem;
+        line-height: 5.2rem;
+      }
+      .right {
+        flex: 1;
+      }
+
+      .create {
+        font-size: 32px;
+        line-height: 42px;
+        /* identical to box height, or 131% */
+
+        letter-spacing: -0.006em;
+      }
+      .create-sub {
+        font-size: 1.6rem;
+        line-height: 2.6rem;
+        letter-spacing: -0.006em;
+        // padding-bottom: 4.2rem;
+        padding: 0.6rem 0 4.2rem 0;
+      }
+    }
+  }
+}
+
+.faces {
+  background-color: white;
+  background-image: url("/assets/images/grid.svg");
+  padding: 13.2rem 0;
+  .k-container {
+    p {
+      span {
+        color: #a4a4a4;
+      }
+      font-size: 5.2rem;
+      line-height: 5.8rem;
+      padding-bottom: 6.2rem;
+    }
+    .k-row {
+      //   gap: 3rem;
+      .founder-name {
+        font-size: 24px;
+        line-height: 32px;
+        padding: 2.4rem 0 1rem 0;
+      }
+    }
+  }
+}
