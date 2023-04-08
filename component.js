@@ -27,8 +27,8 @@ class Navbar extends HTMLElement {
                 </li>
                 <li>
                 <a  href="pricing.html">Pricing</a></li>
-                <li>  <a  href="about.html">About</a></li>
-                <li>Blog</li>
+                <li> <a  href="about.html">About</a></li>
+                <li> <a  href="blog.html">Blog</a></li>
               </ul>
             </div>
             <div class="btn-wrapper">

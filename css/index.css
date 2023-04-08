@@ -64,6 +64,12 @@ body {
   opacity: 0.87;
 }
 
+.black161-52 {
+  /* 87 opacity */
+  color: var(--black161);
+  opacity: 0.52;
+}
+
 .black161-72 {
   /* opacity 72 */
   color: var(--black161);
@@ -1447,6 +1453,174 @@ footer .k-container hr {
   font-size: 24px;
   line-height: 32px;
   padding: 2.4rem 0 1rem 0;
+}
+
+.blog {
+  width: 100%;
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+  padding: 20.5rem 0rem 13.2rem;
+}
+.blog .latest {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  /* identical to box height */
+  padding-bottom: 2rem;
+  color: #007c89;
+}
+.blog .latest span {
+  color: rgba(0, 0, 0, 0.3215686275);
+}
+.blog .blog-title {
+  font-size: 7.2rem;
+  line-height: 8rem;
+  padding: 2rem 0rem 1.6rem;
+}
+.blog .blog-subtitle {
+  font-size: 28px;
+  line-height: 38px;
+  padding-bottom: 13.2rem;
+}
+
+.issues {
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+}
+.issues .k-container .k-row {
+  gap: 12rem;
+  align-items: start;
+}
+.issues .k-container .k-row .left,
+.issues .k-container .k-row .right {
+  flex: 1;
+}
+.issues .k-container .k-row .left .more {
+  display: flex;
+  gap: 1.6rem;
+  padding-bottom: 2.4rem;
+  align-items: center;
+}
+.issues .k-container .k-row .left .more p {
+  width: max-content;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.issues .k-container .k-row .left .line {
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  width: 683px;
+  height: 0px;
+}
+.issues .k-container .k-row .left .content .content-title {
+  font-size: 34px;
+  line-height: 42px;
+  padding: 0 0 1.2rem;
+}
+.issues .k-container .k-row .left .content .content-desc {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  padding-bottom: 2rem;
+}
+.issues .k-container .k-row .left .content .latest {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  /* identical to box height */
+  padding-bottom: 8.2rem;
+  color: #007c89;
+}
+.issues .k-container .k-row .left .content .latest span {
+  color: rgba(0, 0, 0, 0.3215686275);
+}
+.issues .k-container .k-row .left .load {
+  background-color: transparent;
+  color: black;
+  width: 100%;
+  margin-bottom: 8rem;
+  padding: 1.4rem 1.6rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-align: center;
+}
+.issues .k-container .k-row .right .more {
+  display: flex;
+  gap: 1.6rem;
+  padding-bottom: 2.4rem;
+  align-items: center;
+}
+.issues .k-container .k-row .right .more p {
+  width: max-content;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.issues .k-container .k-row .right .line {
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  width: 28.8rem;
+  height: 0px;
+}
+.issues .k-container .k-row .right .line1 {
+  border: 0.5px solid rgba(0, 0, 0, 0.24);
+  width: 27rem;
+  height: 0px;
+}
+.issues .k-container .k-row .right .about-korrect {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.issues .k-container .k-row .right .about-korrect .korrect-desc .korrect {
+  font-size: 22px;
+  line-height: 24px;
+  /* identical to box height, or 109% */
+  letter-spacing: -0.005em;
+  color: #000000;
+}
+.issues .k-container .k-row .right .about-korrect .korrect-desc .user {
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  letter-spacing: -0.005em;
+  color: #000000;
+}
+.issues .k-container .k-row .right .content .content-title {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  padding: 0 0 0.8rem;
+}
+.issues .k-container .k-row .right .content .content-desc {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  padding-bottom: 1.6rem;
+}
+.issues .k-container .k-row .right .content .latest {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  /* identical to box height */
+  padding-bottom: 3.6rem;
+  color: #007c89;
+}
+.issues .k-container .k-row .right .content .latest span {
+  color: rgba(0, 0, 0, 0.3215686275);
+}
+.issues .k-container .k-row .right .issues {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.8rem;
+}
+.issues .k-container .k-row .right .issues .consumer {
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  color: black;
+}
+.issues .k-container .k-row .right .issues .issue {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: black;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */
