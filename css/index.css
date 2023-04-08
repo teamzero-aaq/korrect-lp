@@ -1477,8 +1477,8 @@ footer .k-container hr {
   padding: 2rem 0rem 1.6rem;
 }
 .blog .blog-subtitle {
-  font-size: 28px;
-  line-height: 38px;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
   padding-bottom: 13.2rem;
 }
 
@@ -1621,6 +1621,72 @@ footer .k-container hr {
   padding: 0.5rem 1rem;
   border: 1px solid rgba(0, 0, 0, 0.24);
   border-radius: 30px;
+}
+
+.singleblog {
+  width: 100%;
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+  padding: 20.5rem 0rem 9.2rem;
+}
+.singleblog .k-container .center {
+  width: 78rem;
+  margin: 0 auto;
+}
+.singleblog .k-container .center .korrect {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding-bottom: 2rem;
+}
+.singleblog .k-container .center .korrect span {
+  color: rgba(0, 0, 0, 0.32);
+}
+.singleblog .k-container .center .blog-title {
+  font-size: 7.2rem;
+  line-height: 8rem;
+  padding-bottom: 4rem;
+}
+.singleblog .k-container .center .blog-subtitle {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 3.6rem 0 4.6rem;
+}
+.singleblog .k-container .center .reasons .reason {
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+}
+.singleblog .k-container .center .reasons .content {
+  padding: 4rem 0;
+}
+.singleblog .k-container .center .reasons .content span {
+  color: var(--primary);
+  text-decoration: underline;
+}
+.singleblog .k-container .center .reasons .content .time {
+  font-size: 2.4rem;
+  line-height: 3rem;
+  padding-bottom: 1.4rem;
+}
+.singleblog .k-container .center .reasons .content .time-desc {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.singleblog .k-container .center .reasons .content .factors {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  padding: 2.4rem 0 0;
+}
+.singleblog .k-container .prev {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  padding-top: 7.2rem;
+  display: flex;
+  gap: 0.6rem;
+}
+.singleblog .k-container .prev-sense {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: black;
 }
 
 /*# sourceMappingURL=index.css.map */
