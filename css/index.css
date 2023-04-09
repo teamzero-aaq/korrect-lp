@@ -1452,8 +1452,11 @@ footer .k-container hr {
 .faces .k-container p span {
   color: #a4a4a4;
 }
-.faces .k-container .k-row div {
-  gap: 3rem;
+.faces .k-container .k-row {
+  align-items: flex-start;
+}
+.faces .k-container .k-row .team-card {
+  width: 31%;
 }
 .faces .k-container .k-row .founder-name {
   font-size: 24px;
