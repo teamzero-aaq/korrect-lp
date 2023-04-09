@@ -25,6 +25,7 @@
     border-radius: 1rem;
     .k-row {
       padding: 4rem;
+      // flex-wrap: unset;
 
       .content-wrapper {
         width: 38%;
@@ -115,7 +116,7 @@
     grid-column-gap: 7rem;
 
     .item {
-      width: 36.5rem;
+      // width: 36.5rem;
       // background: red;
 
       .reason {

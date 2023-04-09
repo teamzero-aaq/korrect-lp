@@ -435,12 +435,18 @@
       gap: 10rem;
       .item-2 {
         width: 22.2rem;
+        align-self: center;
+        justify-self: center;
       }
       .item-3 {
         width: 17rem;
+        align-self: center;
+        justify-self: center;
       }
       .item-4 {
         width: 20.1rem;
+        align-self: center;
+        justify-self: center;
       }
       .community {
         font-weight: 600;
@@ -536,6 +542,7 @@
       }
 
       .item:not(:first-child) {
+        align-self: center;
         justify-self: center;
       }
     }

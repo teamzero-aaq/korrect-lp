@@ -98,6 +98,10 @@
       padding-bottom: 6.2rem;
     }
     .k-row {
+      div {
+        // width: 33%;
+        gap: 3rem;
+      }
       //   gap: 3rem;
       .founder-name {
         font-size: 24px;

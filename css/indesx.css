@@ -139,7 +139,7 @@ a {
 }
 
 .k-container {
-  width: 1260px;
+  width: 85vw;
 }
 
 .k-row {
@@ -1262,16 +1262,19 @@ footer .k-container hr {
 }
 .plan .k-container .faq-options-grid .item-2 {
   width: 22.2rem;
+  background-color: #ccc;
   align-self: center;
   justify-self: center;
 }
 .plan .k-container .faq-options-grid .item-3 {
   width: 17rem;
+  background-color: #ccc;
   align-self: center;
   justify-self: center;
 }
 .plan .k-container .faq-options-grid .item-4 {
   width: 20.1rem;
+  background-color: #ccc;
   align-self: center;
   justify-self: center;
 }
@@ -1356,7 +1359,6 @@ footer .k-container hr {
   padding-left: 1rem;
 }
 .plan .k-container .faq-options-item .item:not(:first-child) {
-  align-self: center;
   justify-self: center;
 }
 .plan .k-container .first-row {
@@ -1451,9 +1453,6 @@ footer .k-container hr {
 }
 .faces .k-container p span {
   color: #a4a4a4;
-}
-.faces .k-container .k-row div {
-  gap: 3rem;
 }
 .faces .k-container .k-row .founder-name {
   font-size: 24px;
@@ -1695,4 +1694,4 @@ footer .k-container hr {
   color: black;
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=indesx.css.map */
