@@ -5,7 +5,7 @@ class Navbar extends HTMLElement {
         <div class="k-container">
           <div class="k-row">
             <div class="logo">
-              <a href="index.html"><img src="assets//images/Logo.svg" alt="" /></a>
+              <a href="index.html" aria-label="Korrect"><img src="assets//images/Logo.svg" alt="" /></a>
             </div>
             <div class="menu">
               <ul>

@@ -191,7 +191,7 @@
             font-weight: 500;
             font-size: 1.8rem;
             line-height: 2.4rem;
-            text-align: center;
+            text-align: start;
             padding: 1.6rem 0 4.4rem 0;
           }
           .left {
@@ -210,7 +210,7 @@
             color: rgba(0, 0, 0, 0.52);
           }
           .get {
-            padding: 1.1rem 9.8rem;
+            // padding: 1.1rem 9.8rem;
             background: var(--primary);
             border-radius: 3.2rem;
             width: 100%;

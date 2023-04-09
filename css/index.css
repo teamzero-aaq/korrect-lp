@@ -139,7 +139,7 @@ a {
 }
 
 .k-container {
-  width: 85vw;
+  width: 1260px;
 }
 
 .k-row {
@@ -1040,7 +1040,7 @@ footer .k-container hr {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.4rem;
-  text-align: center;
+  text-align: start;
   padding: 1.6rem 0 4.4rem 0;
 }
 .pricing-detail .k-container .k-row .card .card-wrap .left {
@@ -1059,7 +1059,6 @@ footer .k-container hr {
   color: rgba(0, 0, 0, 0.52);
 }
 .pricing-detail .k-container .k-row .card .card-wrap .get {
-  padding: 1.1rem 9.8rem;
   background: var(--primary);
   border-radius: 3.2rem;
   width: 100%;
