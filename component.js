@@ -32,8 +32,8 @@ class Navbar extends HTMLElement {
               </ul>
             </div>
             <div class="btn-wrapper">
-              <p>Sign In</p>
-              <button class="Inter-700">Get Started</button>
+              <a href="https://app.getkorrect.com/login"> <p>Sign In</p></a>
+              <button onclick="window.location.href='https://app.getkorrect.com/signup';" class="Inter-700">Get Started</button>
             </div>
           </div>
         </div>
