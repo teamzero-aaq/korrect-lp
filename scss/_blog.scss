@@ -1,0 +1,236 @@
+.blog {
+  // width: 100%;
+  //   height: 100vh;
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+
+  padding: 20.5rem 0rem 13.2rem;
+
+  @include smallmobile {
+    padding: 11.4rem 2rem 8.8rem;
+  }
+
+  .latest {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    /* identical to box height */
+    padding-bottom: 2rem;
+
+    color: #007c89;
+    span {
+      color: #00000052;
+    }
+  }
+
+  .blog-title {
+    font-size: 7.2rem;
+    line-height: 8rem;
+    padding: 2rem 0rem 1.6rem;
+
+    @include smallmobile {
+      padding: 2.4rem 0rem 2.4rem;
+      font-size: 3.4rem;
+      line-height: 4rem;
+    }
+  }
+  .blog-subtitle {
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    padding-bottom: 13.2rem;
+
+    @include smallmobile {
+      // width: 100%;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      // text-align: start;
+      padding-bottom: 8.8rem;
+    }
+  }
+}
+
+.issues {
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+
+  @include smallmobile {
+    padding: 0 2rem 8.8rem;
+  }
+  .k-container {
+    .k-row {
+      gap: 12rem;
+      align-items: start;
+      .left,
+      .right {
+        flex: 1;
+      }
+
+      @include smallmobile {
+        // gap: 0;
+        display: block;
+      }
+
+      .left {
+        .more {
+          display: flex;
+          gap: 1.6rem;
+          padding-bottom: 2.4rem;
+          align-items: center;
+          p {
+            width: max-content;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+          }
+        }
+        .line {
+          border: 0.5px solid rgba(0, 0, 0, 0.24);
+          width: 683px;
+          height: 0px;
+
+          @include smallmobile {
+            width: calc(100% - 10rem);
+          }
+        }
+
+        .content {
+          .content-title {
+            font-size: 34px;
+            line-height: 42px;
+            padding: 0 0 1.2rem;
+
+            @include smallmobile {
+              font-size: 3.2rem;
+              line-height: 4rem;
+            }
+          }
+          .content-desc {
+            font-size: 1.8rem;
+            line-height: 2.7rem;
+            padding-bottom: 2rem;
+          }
+          .latest {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            /* identical to box height */
+            padding-bottom: 8.2rem;
+
+            color: #007c89;
+            span {
+              color: #00000052;
+            }
+          }
+        }
+        .load {
+          background-color: transparent;
+          color: black;
+          width: 100%;
+          margin-bottom: 8rem;
+          padding: 1.4rem 1.6rem;
+
+          border: 1px solid rgba(0, 0, 0, 0.24);
+          border-radius: 10px;
+          font-size: 1.6rem;
+          line-height: 1.6rem;
+
+          text-align: center;
+        }
+      }
+
+      .right {
+        .more {
+          display: flex;
+          gap: 1.6rem;
+          padding-bottom: 2.4rem;
+          align-items: center;
+          p {
+            width: max-content;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+          }
+        }
+        .line {
+          border: 0.5px solid rgba(0, 0, 0, 0.24);
+          width: 28.8rem;
+          height: 0px;
+        }
+        .line1 {
+          border: 0.5px solid rgba(0, 0, 0, 0.24);
+          width: 27rem;
+          height: 0px;
+        }
+
+        .about-korrect {
+          display: flex;
+          gap: 2rem;
+          align-items: center;
+          padding-bottom: 8rem;
+          .korrect-desc {
+            .korrect {
+              font-size: 22px;
+              line-height: 24px;
+              /* identical to box height, or 109% */
+
+              letter-spacing: -0.005em;
+
+              color: #000000;
+            }
+            .user {
+              font-size: 14px;
+              line-height: 22px;
+              /* identical to box height, or 157% */
+
+              letter-spacing: -0.005em;
+
+              color: #000000;
+            }
+          }
+        }
+
+        .content {
+          .content-title {
+            font-size: 2rem;
+            line-height: 2.4rem;
+            padding: 0 0 0.8rem;
+          }
+          .content-desc {
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+            padding-bottom: 1.6rem;
+          }
+          .latest {
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+            /* identical to box height */
+            padding-bottom: 3.6rem;
+
+            color: #007c89;
+            span {
+              color: #00000052;
+            }
+          }
+        }
+
+        .topic-issues {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-bottom: 1.8rem;
+          .consumer {
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+
+            color: black;
+          }
+          .issue {
+            font-size: 1.3rem;
+            line-height: 1.3rem;
+            color: black;
+            padding: 0.5rem 1rem;
+
+            border: 1px solid rgba(0, 0, 0, 0.24);
+            border-radius: 30px;
+          }
+        }
+      }
+    }
+  }
+}

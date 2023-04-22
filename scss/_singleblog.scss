@@ -1,0 +1,86 @@
+.singleblog {
+  // width: 100%;
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--white);
+
+  padding: 20.5rem 0rem 9.2rem;
+
+  @include smallmobile {
+    padding: 11.4rem 2rem 8.8rem;
+  }
+  .k-container {
+    .center {
+      width: 78rem;
+      margin: 0 auto;
+
+      @include smallmobile {
+        width: unset;
+      }
+      .korrect {
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+
+        span {
+          color: rgba(0, 0, 0, 0.32);
+        }
+        padding-bottom: 2rem;
+      }
+      .blog-title {
+        font-size: 7.2rem;
+        line-height: 8rem;
+        padding-bottom: 4rem;
+
+        @include smallmobile {
+          padding: 2.4rem 0rem 2.4rem;
+          font-size: 3.4rem;
+          line-height: 4rem;
+        }
+      }
+      .blog-subtitle {
+        font-size: 1.8rem;
+        line-height: 2.8rem;
+        padding: 3.6rem 0 4.6rem;
+      }
+
+      .reasons {
+        .reason {
+          font-size: 2.8rem;
+          line-height: 3.4rem;
+        }
+        .content {
+          padding: 4rem 0;
+          span {
+            color: var(--primary);
+            text-decoration: underline;
+          }
+          .time {
+            font-size: 2.4rem;
+            line-height: 3rem;
+            padding-bottom: 1.4rem;
+          }
+          .time-desc {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+          }
+          .factors {
+            font-size: 1.8rem;
+            line-height: 2.8rem;
+            padding: 2.4rem 0 0;
+          }
+        }
+      }
+    }
+    .prev {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      padding-top: 7.2rem;
+      display: flex;
+      gap: 0.6rem;
+    }
+    .prev-sense {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: black;
+    }
+  }
+}

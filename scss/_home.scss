@@ -1,0 +1,1138 @@
+/* Fonts */
+
+/* 
+inter - 400,500, 700,
+Sharp Grotesk - 500(medium 20),600(semibold 20),700
+
+
+para - inter - 400
+headeing - Sharp Grotesk - 600
+
+
+*/
+
+/* FONTs */
+
+/* Sharp Grostesk */
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../../assets/fonts/sharp-grotesk/SharpGrotesk-Medium20.otf")
+    format("opentype");
+  font-weight: 500;
+  //   font-style: medium;
+}
+
+@font-face {
+  font-family: "SharpGrotesk";
+  src: url("../../assets/fonts/sharp-grotesk/SharpGrotesk-SemiBold20.otf")
+    format("opentype");
+  font-weight: 600;
+  //   font-style: "semi-bold";
+}
+
+/* Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+/* COLORS */
+:root {
+  --primary: #007c89;
+  --black161: #161616;
+  --black242: #242424;
+  --bg-color: #f0f7f8;
+  --grey-A4A: #a4a4a4;
+  --bg-color2: #fef9ec;
+  --accordion-color: #fcf6ee;
+  --white: #ffffff;
+  --black211: #211f1a;
+  --black333: #333333;
+  --pricing: #b9e0e4;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--black161);
+  background-color: var(--bg-color);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+
+.black161 {
+  color: var(--black161);
+}
+
+.black161-87 {
+  /* 87 opacity */
+  color: var(--black161);
+  opacity: 0.87;
+}
+.black161-52 {
+  /* 87 opacity */
+  color: var(--black161);
+  opacity: 0.52;
+}
+
+.black161-72 {
+  /* opacity 72 */
+  color: var(--black161);
+  opacity: 0.72;
+}
+.black161-82 {
+  /* opacity 82 */
+  color: var(--black161);
+  opacity: 0.82;
+}
+
+.grey-A4A {
+  color: var(--grey-A4A);
+}
+
+/* Font Style */
+.SharpGrotesk-600 {
+  font-family: "SharpGrotesk";
+  font-weight: 600;
+}
+
+.SharpGrotesk-500 {
+  font-family: "SharpGrotesk";
+  font-weight: 500;
+}
+
+.Inter-400 {
+  font-weight: 400;
+}
+.Inter-500 {
+  font-weight: 500;
+}
+
+.Inter-600 {
+  font-weight: 600;
+}
+
+.Inter-700 {
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  /* letter-spacing: -0.6%; */
+  color: rgba(22, 22, 22, 0.82);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black161);
+}
+
+// Component
+.k-container {
+  // width: 85vw;
+  width: 1260px;
+
+  // @include desktop {
+  //   background-color: red;
+  // }
+  // @include tablet {
+  //   background-color: green;
+  // }
+  @include smallmobile {
+    width: 100%;
+  }
+  // @include mobile {
+  //   background-color: yellow;
+  // }
+}
+
+.k-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.vertical {
+    flex-direction: column;
+  }
+}
+
+.section-title {
+  font-size: 5.2rem;
+  line-height: 5.8rem;
+  margin-bottom: 1.2rem;
+
+  @include smallmobile {
+    padding: 0 2rem;
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+}
+
+button {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1.2rem 2rem;
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.marquee-holder {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  .card-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+    //   animation: MarqueeCard 15s linear infinite;
+  }
+}
+
+@keyframes MarqueeCard {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Header */
+.navbar {
+  height: 8.3rem;
+  width: 100%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+
+  @include smallmobile {
+    width: 100vw;
+    height: 6.2rem;
+  }
+
+  .k-container {
+    height: calc(100% - 1px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.32);
+    @include smallmobile {
+      padding: 0 2rem;
+    }
+    .k-row {
+      height: calc(100% - 1px);
+      .logo {
+        cursor: pointer;
+        img {
+          width: 12rem;
+          // @include smallmobile {
+          //   width: 10rem;
+          // }
+        }
+      }
+
+      .menu {
+        .humburger {
+          display: none;
+          @include smallmobile {
+            // display: block;
+            // height: 6rem;
+            // width: 6rem;
+            display: inline-block;
+            z-index: 10;
+            // background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+          }
+          .closehumburger,
+          .openhumburger {
+            display: none;
+          }
+
+          .openhumburger {
+            &.active {
+              display: block;
+            }
+          }
+          .closehumburger {
+            &.active {
+              display: block;
+            }
+          }
+        }
+
+        ul {
+          display: flex;
+          align-items: center;
+          margin: 0;
+          padding: 0;
+
+          @include smallmobile {
+            position: absolute;
+            background-color: white;
+            width: 100vw;
+            // height: 100vh;
+            height: calc(100vh - 6.2rem);
+            top: 6.2rem;
+            // left: 100%;
+            left: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            z-index: 1;
+            overflow-x: hidden;
+          }
+
+          .mobile {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            margin-top: 3rem;
+
+            .mobile-get-started {
+              width: 90%;
+              margin: 0 auto;
+            }
+            a {
+              text-align: center;
+              padding: 3rem;
+            }
+
+            @include smallmobile {
+              display: flex;
+            }
+          }
+
+          // @include smallmobile {
+          &.active {
+            left: 0;
+          }
+          // }
+
+          li {
+            color: var(--black161);
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            text-decoration: none;
+            margin: 0px 1.2rem;
+            list-style-type: none;
+            position: relative;
+            cursor: pointer;
+
+            a {
+              @include smallmobile {
+                color: black;
+                // font-size: 2.5rem;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+                padding: 1rem;
+                display: block;
+              }
+            }
+
+            .dropdown {
+              display: none;
+              position: absolute;
+              background: #ffffff;
+              border: 1px solid rgba(0, 0, 0, 0.12);
+              border-radius: 10px;
+              padding: 1.6rem;
+              top: 3.5rem;
+              width: max-content;
+
+              p {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                color: var(--black333);
+                cursor: pointer;
+                margin: 0.5rem 0rem;
+              }
+
+              hr {
+                color: rgba(0, 0, 0, 0.12);
+                margin: 1.4rem 0rem;
+                border-style: solid;
+              }
+            }
+          }
+        }
+      }
+
+      .btn-wrapper {
+        display: flex;
+        align-items: center;
+
+        @include smallmobile {
+          display: none;
+        }
+        p {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          margin-right: 2.4rem;
+          cursor: pointer;
+        }
+
+        button {
+          font-size: 1.6rem;
+          line-height: 2.4rem;
+          padding: 1.2rem 2rem;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  width: 100%;
+  //   height: 100vh;
+  background-image: url("/assets/images/grid.svg");
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+
+  .k-container {
+    padding: 18rem 0rem 9.7rem;
+
+    @include smallmobile {
+      padding: 11.4rem 0rem 8.8rem;
+    }
+    .k-row {
+      @include smallmobile {
+        // flex-direction: column;
+        padding: 0 2rem;
+      }
+      .hero-left {
+        width: 50%;
+        @include smallmobile {
+          width: 100%;
+          // padding: 1rem;
+        }
+        .signup-cta {
+          background: var(--white);
+          width: max-content;
+          border: 1px solid var(--primary);
+          border-radius: 2.8rem;
+          font-size: 1.1rem;
+          line-height: 1.6rem;
+
+          color: var(--primary);
+          padding: 0.5rem 1rem;
+        }
+
+        .hero-title {
+          font-size: 7.2rem;
+          line-height: 8rem;
+          padding: 2rem 0rem 1.2rem;
+
+          @include smallmobile {
+            line-height: unset;
+            padding: 2.4rem 0rem 2.4rem;
+            font-size: 3.4rem;
+            line-height: 4rem;
+          }
+        }
+
+        p {
+          font-size: 2rem;
+          line-height: 2.7rem;
+          padding-right: 8rem;
+          margin-bottom: 3.6rem;
+
+          @include smallmobile {
+            margin-bottom: 2.4rem;
+            font-size: 1.8rem;
+          }
+
+          @include smallmobile {
+            padding-right: 0;
+          }
+
+          &.k-offer {
+            font-size: 1.4rem;
+            line-height: 1.7rem;
+            padding: 0;
+            margin: 0;
+          }
+        }
+
+        @include smallmobile {
+          .try {
+            display: flex;
+            justify-content: center;
+          }
+
+          .k-offer {
+            text-align: center;
+          }
+        }
+
+        button {
+          font-size: 2rem;
+          line-height: 2.8rem;
+          padding: 2rem 3.2rem;
+          margin-bottom: 1.2rem;
+        }
+      }
+
+      .hero-right {
+        position: relative;
+        width: 50%;
+        text-align: end;
+        @include smallmobile {
+          width: calc(100vw - 2rem);
+          margin-top: 2.4rem;
+        }
+
+        .bg-shadow {
+          background: radial-gradient(
+            50% 50% at 50% 50%,
+            #259fac 0%,
+            rgba(0, 124, 137, 0) 67.19%
+          );
+          opacity: 0.32;
+          position: absolute;
+          width: 90rem;
+          height: 90rem;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        img {
+          width: 50rem;
+          position: relative;
+          @include smallmobile {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .k-clients {
+      width: 100%;
+      text-align: center;
+      margin-top: 11.2rem;
+
+      @include smallmobile {
+        margin-top: 8.8rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+        line-height: 3.2rem;
+        margin-bottom: 5rem;
+
+        @include smallmobile {
+          margin-bottom: 4.4rem;
+        }
+      }
+
+      .k-row {
+        padding: 1rem;
+
+        @include smallmobile {
+          padding: 0 6.5rem;
+
+          gap: 3.2rem;
+          .item {
+            flex: 1;
+            height: 2.5rem;
+          }
+        }
+        img {
+          // height: 3.5rem;
+          // background-color: red;
+          // width: 70%;
+        }
+      }
+    }
+  }
+}
+
+.how-its-work {
+  background-color: var(--white);
+  padding: 13.2rem 0;
+  background-image: url("/assets/images/grid.svg");
+
+  @include smallmobile {
+    padding: 8.8rem 0rem;
+  }
+
+  .k-container {
+    .k-row {
+      margin-top: 7.2rem;
+      margin-bottom: 13.2rem;
+
+      @include smallmobile {
+        flex-direction: column;
+        margin-bottom: 8.8rem;
+
+        // justify-content: center;
+        // align-items: start;
+      }
+
+      .k-card {
+        width: 25%;
+
+        @include smallmobile {
+          width: 100%;
+        }
+
+        .k-row {
+          margin: 0rem;
+          flex-wrap: nowrap;
+          @include smallmobile {
+            display: none;
+          }
+          .number-circle {
+            border: 2px solid var(--primary);
+            border-radius: 50%;
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+            flex-shrink: 0;
+          }
+
+          .horizontal-line {
+            height: 0.2rem;
+            background-color: var(--primary);
+            width: 100%;
+          }
+        }
+
+        .inner-card {
+          background: var(--bg-color2);
+          border-radius: 1rem;
+          width: 82%;
+          height: 22vw;
+          margin-top: 2.4rem;
+          padding: 3.6rem 0rem 0rem 3.2rem;
+          position: relative;
+          overflow: hidden;
+          box-sizing: unset;
+
+          @include smallmobile {
+            margin: 1.4rem auto;
+          }
+
+          @include smallmobile {
+            height: 33.2rem;
+          }
+
+          h3 {
+            font-size: 3rem;
+            line-height: 3rem;
+            margin-bottom: 3.2rem;
+          }
+
+          img {
+            position: absolute;
+            bottom: 0;
+            right: -1.2rem;
+            width: 19vw;
+
+            @include smallmobile {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+
+    .feedback-section {
+      // width: 100%;
+      background: var(--bg-color);
+      border-radius: 1rem;
+      padding: 4rem;
+
+      @include smallmobile {
+        padding: 2rem;
+      }
+
+      .k-row {
+        margin: 0rem;
+
+        @include smallmobile {
+          flex-direction: unset;
+        }
+
+        .content-wrapper {
+          width: 42%;
+          @include smallmobile {
+            width: 100%;
+          }
+          h3 {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            margin-bottom: 1.2rem;
+          }
+
+          h2 {
+            font-size: 4.2rem;
+            line-height: 5.2rem;
+            margin-bottom: 1.2rem;
+            @include smallmobile {
+              // font-size: 4rem;
+              font-size: 3.2rem;
+              line-height: 4rem;
+            }
+          }
+        }
+        @include smallmobile {
+          .image-wrapper {
+            width: 100%;
+            // width: calc(100vw - 2rem);
+
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+
+    .bottom-row {
+      margin-top: 3.5rem;
+      .k-row {
+        margin: 0rem;
+
+        .card {
+          background: var(--bg-color);
+          border-radius: 1rem;
+          padding: 4rem 4rem 0rem;
+          width: 42%;
+          overflow: hidden;
+          position: relative;
+          height: 67rem;
+
+          @include smallmobile {
+            width: 100%;
+            // padding: 1rem 1rem 0rem;
+            padding: 1rem 2rem 0rem;
+
+            &:first-child {
+              height: 54rem;
+            }
+            &:nth-child(2) {
+              height: 51rem;
+            }
+            margin-bottom: 3.5rem;
+            box-sizing: border-box;
+          }
+
+          h3 {
+            font-size: 2rem;
+            line-height: 2.8rem;
+            margin-bottom: 1.2rem;
+          }
+
+          h2 {
+            font-size: 4.2rem;
+            line-height: 5.2rem;
+            margin-bottom: 1.2rem;
+            @include smallmobile {
+              font-size: 3.2rem;
+              line-height: 4rem;
+            }
+          }
+
+          .image-wrapper {
+            width: 87%;
+            position: absolute;
+            bottom: 0;
+
+            @include smallmobile {
+              // width: 37rem;
+              position: unset;
+              margin-top: 2rem;
+              width: 100%;
+              // width: calc(100vw - 2rem);
+            }
+          }
+
+          // img {
+          //   width: 87%;
+          //   position: absolute;
+          //   bottom: 0rem;
+          // }
+        }
+      }
+    }
+  }
+}
+
+.integrated-tool {
+  background-color: var(--white);
+  .k-container {
+    overflow: hidden;
+    background-color: var(--bg-color2);
+    padding: 13.2rem 0;
+    background-image: url("/assets/images/grid.svg");
+    position: relative;
+    overflow: hidden;
+
+    p {
+      margin-bottom: 7.2rem;
+      padding: 0 2rem;
+      @include smallmobile {
+        font-size: 1.8rem;
+      }
+    }
+
+    .marquee-holder {
+      .card-wrapper {
+        animation: MarqueeCard 15s linear infinite;
+
+        .tool-card-wrapper {
+          margin-right: 2.4rem;
+          .tool-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.24);
+            border-radius: 1rem;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            width: 20rem;
+            margin-bottom: 2.4rem;
+            cursor: pointer;
+
+            img {
+              margin-right: 1.2rem;
+            }
+
+            h5 {
+              font-size: 2rem;
+              line-height: 2.6rem;
+            }
+          }
+
+          .tool-card:last-child {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Review Section
+
+.review-section {
+  padding: 9.2rem 0rem 0rem;
+  background-color: var(--white);
+
+  .k-container {
+    .review-wrapper {
+      background-color: var(--bg-color);
+      padding: 13.2rem 0 12.2rem;
+      background-image: url("/assets/images/grid.svg");
+      position: relative;
+      overflow: hidden;
+
+      @include smallmobile {
+        padding: 8.8rem 2rem 12.2rem;
+      }
+
+      .marquee-holder {
+        margin-top: 7.2rem;
+        .card-wrapper {
+          animation: MarqueeCard 30s linear infinite;
+          align-items: stretch;
+
+          .review-card {
+            background: var(--white);
+            border: 1px solid rgba(0, 0, 0, 0.24);
+            border-radius: 1rem;
+            padding: 2rem;
+            width: 40.8rem;
+            margin-right: 2rem;
+
+            .k-row {
+              justify-content: flex-start;
+
+              img {
+                width: 3.8rem;
+                height: 3.8rem;
+                border-radius: 50%;
+                margin-right: 1rem;
+              }
+
+              .reviewer-details {
+                h5 {
+                  color: #161616eb;
+                  font-size: 1.6rem;
+                  line-height: 2.4rem;
+                }
+
+                p {
+                  color: #1616169e;
+                  font-size: 1.4rem;
+                  line-height: 2rem;
+                  margin: 0;
+                }
+              }
+            }
+
+            p {
+              font-size: 1.6rem;
+              line-height: 2.4rem;
+              margin-top: 1.6rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// FAQ
+
+// FAQS
+.faqs {
+  background-color: var(--white);
+  padding: 13.2rem 0rem 13.2rem;
+  background-image: url("/assets/images/grid.svg");
+
+  @include smallmobile {
+    padding: 8.8rem 2rem 8.8rem;
+  }
+
+  .accordion-wrapper {
+    margin-top: 7.2rem;
+
+    @include smallmobile {
+      margin-top: 4.2rem;
+    }
+    .accordion {
+      cursor: pointer;
+      width: 70rem;
+
+      @include smallmobile {
+        width: calc(100% - 2rem);
+        max-width: 33rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+      }
+      text-align: left;
+      position: relative;
+      background: var(--accordion-color);
+      border: 1px solid rgba(0, 0, 0, 0.24);
+      border-radius: 1rem;
+      padding: 2rem;
+
+      font-size: 2.2rem;
+      line-height: 3rem;
+      user-select: none;
+
+      max-height: 2.8rem;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      margin-bottom: 1.2rem;
+      color: var(--black161);
+      font-weight: 500;
+
+      .accordion-icon {
+        transform: rotate(0deg);
+        position: absolute;
+        transition: transform 0.4s;
+        right: 2rem;
+        top: 2.8rem;
+        @include smallmobile {
+          top: 1.8rem;
+        }
+      }
+
+      .panel {
+        overflow: hidden;
+        width: 100%;
+        margin-top: 1rem;
+        opacity: 0;
+
+        p {
+          font-size: 1.8rem;
+          line-height: 3rem;
+        }
+
+        ul {
+          padding-left: 2rem;
+          margin: 0;
+
+          li {
+            font-size: 1.6rem;
+            line-height: 2.5rem;
+            font-weight: 400;
+            list-style-type: initial;
+          }
+        }
+      }
+
+      &.active {
+        //   background-color: #ccc;
+
+        .accordion-icon {
+          transform: rotate(-180deg);
+        }
+
+        .panel {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  background: #242424;
+  padding: 8.2rem 11.1rem 2rem;
+  color: white;
+
+  @include smallmobile {
+    padding: 5.2rem 2rem 0;
+  }
+  .k-container {
+    .k-row {
+      justify-content: space-between;
+      align-items: start;
+
+      @include smallmobile {
+        > div {
+          // width: 16rem;
+          width: 14rem;
+          max-width: 16rem;
+          margin-bottom: 5.2rem;
+        }
+      }
+      .head {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        color: rgba(255, 255, 255, 0.96);
+        margin-bottom: 2rem;
+
+        @include smallmobile {
+          font-size: 1.6rem;
+        }
+      }
+      .link {
+        font-weight: 500;
+        font-size: 1.6rem;
+        line-height: 1.3rem;
+        letter-spacing: -0.006em;
+        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 1.6rem;
+        @include smallmobile {
+          font-size: 1.4rem;
+          line-height: 1.7rem;
+        }
+      }
+    }
+    hr {
+      margin: 6.2rem 0 2.4rem 0;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      @include smallmobile {
+        margin: 1.2rem 0 2.4rem 0;
+      }
+    }
+  }
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2.4rem;
+
+  @include smallmobile {
+    align-items: start;
+  }
+
+  p {
+    color: var(--white);
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    letter-spacing: -0.006em;
+
+    @include smallmobile {
+      font-size: 1.2rem;
+    }
+  }
+  .social {
+    display: flex;
+    gap: 1.6rem;
+
+    @include smallmobile {
+      img {
+        width: 2.4rem;
+        height: 2.4rem;
+      }
+    }
+  }
+  .security {
+    gap: 2.4rem;
+
+    @include smallmobile {
+      width: 26.4rem;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+  }
+}
+
+.copyright {
+  padding-bottom: 6.2rem;
+  @include smallmobile {
+    flex-direction: column;
+    padding-bottom: 5.2rem;
+  }
+}
