@@ -141,7 +141,17 @@ a {
 .k-container {
   width: 1260px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .k-container {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .k-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480.5px) {
   .k-container {
     width: 100%;
   }
@@ -168,7 +178,7 @@ section.vertical {
   line-height: 5.8rem;
   margin-bottom: 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .section-title {
     padding: 0 2rem;
     font-size: 3.2rem;
@@ -223,7 +233,7 @@ button {
   position: fixed;
   z-index: 100;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .navbar {
     width: 100vw;
     height: 6.2rem;
@@ -233,7 +243,17 @@ button {
   height: calc(100% - 1px);
   border-bottom: 1px solid rgba(0, 0, 0, 0.32);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .navbar .k-container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .navbar .k-container {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
   .navbar .k-container {
     padding: 0 2rem;
   }
@@ -250,7 +270,7 @@ button {
 .navbar .k-container .k-row .menu .humburger {
   display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .navbar .k-container .k-row .menu .humburger {
     display: inline-block;
     z-index: 10;
@@ -276,7 +296,7 @@ button {
   margin: 0;
   padding: 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .navbar .k-container .k-row .menu ul {
     position: absolute;
     background-color: white;
@@ -307,7 +327,7 @@ button {
   text-align: center;
   padding: 3rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .navbar .k-container .k-row .menu ul .mobile {
     display: flex;
   }
@@ -325,7 +345,7 @@ button {
   position: relative;
   cursor: pointer;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .navbar .k-container .k-row .menu ul li a {
     color: black;
     letter-spacing: 0.2rem;
@@ -360,7 +380,7 @@ button {
   display: flex;
   align-items: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .navbar .k-container .k-row .btn-wrapper {
     display: none;
   }
@@ -390,12 +410,23 @@ button {
 .hero .k-container {
   padding: 18rem 0rem 9.7rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container {
     padding: 11.4rem 0rem 8.8rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .hero .k-container .k-row {
+    padding: 0 2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .hero .k-container .k-row {
+    padding: 0 2rem;
+    gap: 3rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
   .hero .k-container .k-row {
     padding: 0 2rem;
   }
@@ -403,7 +434,12 @@ button {
 .hero .k-container .k-row .hero-left {
   width: 50%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .hero .k-container .k-row .hero-left {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .hero .k-container .k-row .hero-left {
     width: 100%;
   }
@@ -423,7 +459,7 @@ button {
   line-height: 8rem;
   padding: 2rem 0rem 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-row .hero-left .hero-title {
     line-height: unset;
     padding: 2.4rem 0rem 2.4rem;
@@ -437,13 +473,14 @@ button {
   padding-right: 8rem;
   margin-bottom: 3.6rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-row .hero-left p {
     margin-bottom: 2.4rem;
     font-size: 1.8rem;
+    padding-right: 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .hero .k-container .k-row .hero-left p {
     padding-right: 0;
   }
@@ -454,7 +491,16 @@ button {
   padding: 0;
   margin: 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .hero .k-container .k-row .hero-left .try {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .k-container .k-row .hero-left .k-offer {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .hero .k-container .k-row .hero-left .try {
     display: flex;
     justify-content: center;
@@ -474,10 +520,16 @@ button {
   width: 50%;
   text-align: end;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-row .hero-right {
     width: calc(100vw - 2rem);
     margin-top: 2.4rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .hero .k-container .k-row .hero-right {
+    width: 100%;
+    text-align: center;
   }
 }
 .hero .k-container .k-row .hero-right .bg-shadow {
@@ -494,7 +546,12 @@ button {
   width: 50rem;
   position: relative;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .hero .k-container .k-row .hero-right img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .hero .k-container .k-row .hero-right img {
     width: 100%;
   }
@@ -504,7 +561,7 @@ button {
   text-align: center;
   margin-top: 11.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-clients {
     margin-top: 8.8rem;
   }
@@ -514,7 +571,7 @@ button {
   line-height: 3.2rem;
   margin-bottom: 5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-clients h2 {
     margin-bottom: 4.4rem;
   }
@@ -522,7 +579,7 @@ button {
 .hero .k-container .k-clients .k-row {
   padding: 1rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-clients .k-row {
     padding: 0 6.5rem;
     gap: 3.2rem;
@@ -532,21 +589,41 @@ button {
     height: 2.5rem;
   }
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .hero .k-container .k-clients .k-row {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .hero .k-container .k-clients .k-row {
+    padding: 2rem;
+  }
+}
 .how-its-work {
   background-color: var(--white);
   padding: 13.2rem 0;
   background-image: url("/assets/images/grid.svg");
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work {
     padding: 8.8rem 0rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work {
+    padding: 8.8rem 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .how-its-work {
+    padding: 8.8rem 2rem;
   }
 }
 .how-its-work .k-container .k-row {
   margin-top: 7.2rem;
   margin-bottom: 13.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .k-row {
     flex-direction: column;
     margin-bottom: 8.8rem;
@@ -555,16 +632,21 @@ button {
 .how-its-work .k-container .k-row .k-card {
   width: 25%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .k-row .k-card {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work .k-container .k-row .k-card {
+    width: 24%;
   }
 }
 .how-its-work .k-container .k-row .k-card .k-row {
   margin: 0rem;
   flex-wrap: nowrap;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .k-row .k-card .k-row {
     display: none;
   }
@@ -598,12 +680,12 @@ button {
   overflow: hidden;
   box-sizing: unset;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .k-row .k-card .inner-card {
     margin: 1.4rem auto;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .k-row .k-card .inner-card {
     height: 33.2rem;
   }
@@ -613,13 +695,25 @@ button {
   line-height: 3rem;
   margin-bottom: 3.2rem;
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work .k-container .k-row .k-card .inner-card h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .how-its-work .k-container .k-row .k-card .inner-card h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
 .how-its-work .k-container .k-row .k-card .inner-card img {
   position: absolute;
   bottom: 0;
   right: -1.2rem;
   width: 19vw;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .k-row .k-card .inner-card img {
     width: 90%;
   }
@@ -629,7 +723,17 @@ button {
   border-radius: 1rem;
   padding: 4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .how-its-work .k-container .feedback-section {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work .k-container .feedback-section {
+    padding: 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
   .how-its-work .k-container .feedback-section {
     padding: 2rem;
   }
@@ -637,15 +741,26 @@ button {
 .how-its-work .k-container .feedback-section .k-row {
   margin: 0rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .feedback-section .k-row {
     flex-direction: unset;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work .k-container .feedback-section .k-row {
+    flex-direction: column;
+    gap: 3.4rem;
   }
 }
 .how-its-work .k-container .feedback-section .k-row .content-wrapper {
   width: 42%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .how-its-work .k-container .feedback-section .k-row .content-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .how-its-work .k-container .feedback-section .k-row .content-wrapper {
     width: 100%;
   }
@@ -660,16 +775,26 @@ button {
   line-height: 5.2rem;
   margin-bottom: 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .feedback-section .k-row .content-wrapper h2 {
     font-size: 3.2rem;
     line-height: 4rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .feedback-section .k-row .image-wrapper {
     width: 100%;
     margin-top: 2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work .k-container .feedback-section .k-row .image-wrapper {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .how-its-work .k-container .feedback-section .k-row .image-wrapper {
+    width: 50rem;
   }
 }
 .how-its-work .k-container .bottom-row {
@@ -687,7 +812,7 @@ button {
   position: relative;
   height: 67rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .bottom-row .k-row .card {
     width: 100%;
     padding: 1rem 2rem 0rem;
@@ -701,6 +826,17 @@ button {
     height: 51rem;
   }
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .how-its-work .k-container .bottom-row .k-row .card {
+    padding: 2rem 2rem 0;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .how-its-work .k-container .bottom-row .k-row .card {
+    padding: 2rem 2rem 0;
+    height: 62rem;
+  }
+}
 .how-its-work .k-container .bottom-row .k-row .card h3 {
   font-size: 2rem;
   line-height: 2.8rem;
@@ -711,7 +847,7 @@ button {
   line-height: 5.2rem;
   margin-bottom: 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .bottom-row .k-row .card h2 {
     font-size: 3.2rem;
     line-height: 4rem;
@@ -722,7 +858,7 @@ button {
   position: absolute;
   bottom: 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .how-its-work .k-container .bottom-row .k-row .card .image-wrapper {
     position: unset;
     margin-top: 2rem;
@@ -745,7 +881,7 @@ button {
   margin-bottom: 7.2rem;
   padding: 0 2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .integrated-tool .k-container p {
     font-size: 1.8rem;
   }
@@ -789,7 +925,7 @@ button {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .review-section .k-container .review-wrapper {
     padding: 8.8rem 2rem 12.2rem;
   }
@@ -840,7 +976,7 @@ button {
   padding: 13.2rem 0rem 13.2rem;
   background-image: url("/assets/images/grid.svg");
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faqs {
     padding: 8.8rem 2rem 8.8rem;
   }
@@ -848,7 +984,7 @@ button {
 .faqs .accordion-wrapper {
   margin-top: 7.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faqs .accordion-wrapper {
     margin-top: 4.2rem;
   }
@@ -872,7 +1008,7 @@ button {
   color: var(--black161);
   font-weight: 500;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faqs .accordion-wrapper .accordion {
     width: calc(100% - 2rem);
     max-width: 33rem;
@@ -887,7 +1023,7 @@ button {
   right: 2rem;
   top: 2.8rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faqs .accordion-wrapper .accordion .accordion-icon {
     top: 1.8rem;
   }
@@ -929,7 +1065,17 @@ footer {
   padding: 8.2rem 11.1rem 2rem;
   color: white;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  footer {
+    padding: 5.2rem 2rem 0;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  footer {
+    padding: 5.2rem 2rem 0;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
   footer {
     padding: 5.2rem 2rem 0;
   }
@@ -938,11 +1084,19 @@ footer .k-container .k-row {
   justify-content: space-between;
   align-items: start;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   footer .k-container .k-row > div {
     width: 14rem;
     max-width: 16rem;
     margin-bottom: 5.2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  footer .k-container .k-row {
+    gap: 2rem;
+  }
+  footer .k-container .k-row > div {
+    width: 20rem;
   }
 }
 footer .k-container .k-row .head {
@@ -952,7 +1106,7 @@ footer .k-container .k-row .head {
   color: rgba(255, 255, 255, 0.96);
   margin-bottom: 2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   footer .k-container .k-row .head {
     font-size: 1.6rem;
   }
@@ -965,7 +1119,7 @@ footer .k-container .k-row .link {
   color: rgba(255, 255, 255, 0.72);
   margin-bottom: 1.6rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   footer .k-container .k-row .link {
     font-size: 1.4rem;
     line-height: 1.7rem;
@@ -975,7 +1129,7 @@ footer .k-container hr {
   margin: 6.2rem 0 2.4rem 0;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   footer .k-container hr {
     margin: 1.2rem 0 2.4rem 0;
   }
@@ -987,7 +1141,7 @@ footer .k-container hr {
   align-items: center;
   padding-bottom: 2.4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .footer-logo {
     align-items: start;
   }
@@ -999,7 +1153,7 @@ footer .k-container hr {
   line-height: 1.9rem;
   letter-spacing: -0.006em;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .footer-logo p {
     font-size: 1.2rem;
   }
@@ -1008,7 +1162,7 @@ footer .k-container hr {
   display: flex;
   gap: 1.6rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .footer-logo .social img {
     width: 2.4rem;
     height: 2.4rem;
@@ -1017,21 +1171,30 @@ footer .k-container hr {
 .footer-logo .security {
   gap: 2.4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .footer-logo .security {
     width: 26.4rem;
     flex-wrap: wrap;
     gap: 1.2rem;
+    margin-top: 3.2rem;
   }
 }
 
 .copyright {
   padding-bottom: 6.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .copyright {
     flex-direction: column;
     padding-bottom: 5.2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .copyright {
+    flex-direction: column;
+    padding-bottom: 5.2rem;
+    align-items: start;
+    gap: 3.2rem;
   }
 }
 
@@ -1040,7 +1203,7 @@ footer .k-container hr {
   line-height: 8rem;
   padding: 2rem 0rem 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .feature-title {
     font-size: 3.4rem;
     line-height: 4rem;
@@ -1050,7 +1213,7 @@ footer .k-container hr {
 .hero .k-container .k-row .hero-left .hero-subtitle {
   padding-right: 5rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .hero .k-container .k-row .hero-left .hero-subtitle {
     padding-right: 0;
   }
@@ -1061,7 +1224,7 @@ footer .k-container hr {
   padding: 9.2rem 0;
   background-image: url("/assets/images/grid.svg");
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user {
     padding: 8.8rem 0;
   }
@@ -1073,17 +1236,22 @@ footer .k-container hr {
 .all-user .k-container .k-row {
   padding: 4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user .k-container .k-row {
     flex-direction: column;
     align-items: unset;
     padding: 2rem;
   }
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .all-user .k-container .k-row {
+    padding: 2rem;
+  }
+}
 .all-user .k-container .k-row .content-wrapper {
   width: 38%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user .k-container .k-row .content-wrapper {
     width: 100%;
   }
@@ -1098,40 +1266,33 @@ footer .k-container hr {
   line-height: 5.2rem;
   margin-bottom: 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user .k-container .k-row .content-wrapper h2 {
     font-size: 3.2rem;
     line-height: 4rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user .k-container .k-row .content-wrapper p {
     font-size: 1.8rem;
     line-height: 2.7rem;
   }
 }
-.all-user .k-container .k-row .image-wrapper-grid {
-  background-color: var(--primary);
-  border-radius: 1rem;
-  padding: 2rem;
-  display: grid;
-  grid-gap: 1.3rem;
-  grid-template-columns: auto auto;
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .all-user .k-container .k-row .image-wrapper {
+    width: 60%;
+  }
 }
-.all-user .k-container .k-row .image-wrapper-grid .grid-item-1 {
-  grid-area: 1/1/2/2;
-}
-.all-user .k-container .k-row .image-wrapper-grid .grid-item-2 {
-  grid-area: 2/1/3/2;
-}
-.all-user .k-container .k-row .image-wrapper-grid .grid-item-3 {
-  grid-area: 1/2/3/3;
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .all-user .k-container .k-row .image-wrapper {
+    width: 60%;
+  }
 }
 
 .not-to-build {
   padding-top: 9.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .not-to-build {
     padding: 8.8rem 2rem 0;
   }
@@ -1151,7 +1312,7 @@ footer .k-container hr {
   letter-spacing: -0.006em;
   margin-bottom: 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .not-to-build .feedback {
     text-align: start;
   }
@@ -1163,7 +1324,7 @@ footer .k-container hr {
   letter-spacing: -0.006em;
   margin-bottom: 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .not-to-build .feedback-title {
     font-size: 3.2rem;
     line-height: 4rem;
@@ -1179,7 +1340,7 @@ footer .k-container hr {
   text-align: center;
   letter-spacing: -0.006em;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .not-to-build .feedback-subtitle {
     width: 100%;
     font-size: 1.8rem;
@@ -1187,13 +1348,33 @@ footer .k-container hr {
     text-align: start;
   }
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .not-to-build .feedback-subtitle {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .not-to-build .feedback-subtitle {
+    width: 100%;
+  }
+}
 
 .feedback-reasons {
   padding-top: 7.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .feedback-reasons {
     padding: 5.2rem 0 0;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .feedback-reasons {
+    padding: 7.2rem 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .feedback-reasons {
+    padding: 7.2rem 2rem;
   }
 }
 .feedback-reasons .k-container {
@@ -1208,7 +1389,7 @@ footer .k-container hr {
   grid-row-gap: 6.8rem;
   grid-column-gap: 7rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .feedback-reasons .k-grid .item {
     padding: 0 2rem;
   }
@@ -1234,7 +1415,7 @@ footer .k-container hr {
   padding-top: 1.2rem;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user .k-container .k-row .image-wrapper {
     margin-top: 2rem;
   }
@@ -1242,7 +1423,7 @@ footer .k-container hr {
 .all-user .roadmap {
   padding-top: 13.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .all-user .roadmap {
     padding-top: 8.8rem;
   }
@@ -1252,7 +1433,7 @@ footer .k-container hr {
   background-color: var(--primary);
   padding: 10.2rem 10.2rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .happy {
     padding: 7.2rem 2rem 0;
   }
@@ -1269,7 +1450,7 @@ footer .k-container hr {
   text-align: center;
   color: #ffffff;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .happy .k-container .happytitle {
     font-size: 4rem;
     line-height: 4rem;
@@ -1291,7 +1472,7 @@ footer .k-container hr {
   gap: 3.1rem;
   margin-bottom: 5.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .happy .k-container .chip-container {
     flex-direction: column;
     align-items: start;
@@ -1322,9 +1503,19 @@ footer .k-container hr {
   height: 47rem;
   overflow: hidden;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .happy .happy-banner {
     height: 20rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .happy .happy-banner {
+    height: 27rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .happy .happy-banner {
+    height: 39rem;
   }
 }
 
@@ -1338,7 +1529,7 @@ footer .k-container hr {
   overflow: hidden;
   padding: 18rem 0rem 6.6rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing {
     padding: 11.4rem 2rem 8.8rem;
   }
@@ -1355,7 +1546,7 @@ footer .k-container hr {
   overflow: hidden;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner {
     padding: 3.2rem;
     height: 36.6rem;
@@ -1377,7 +1568,7 @@ footer .k-container hr {
   font-size: 1.6rem;
   line-height: 2.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .offer {
     height: 5rem;
     width: 22.8rem;
@@ -1389,7 +1580,7 @@ footer .k-container hr {
   color: var(--black242);
   padding: 1rem 0 1rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .lifetime-plan {
     font-size: 2.4rem;
     line-height: 3rem;
@@ -1399,7 +1590,7 @@ footer .k-container hr {
 .pricing .k-container .pricing-banner .lifetime-plan br {
   display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .lifetime-plan br {
     display: block;
   }
@@ -1410,7 +1601,7 @@ footer .k-container hr {
   line-height: 2.4rem;
   color: var(--black242);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .subtitle {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -1423,7 +1614,7 @@ footer .k-container hr {
   gap: 7rem;
   padding: 2rem 0 2rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .billing {
     flex-direction: column;
     gap: 1.6rem;
@@ -1436,7 +1627,7 @@ footer .k-container hr {
   line-height: 4.6rem;
   color: var(--black242);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .billing p > span {
     font-size: 3.8rem;
     line-height: 3.8rem;
@@ -1457,7 +1648,7 @@ footer .k-container hr {
   font-weight: 500;
   line-height: 2.4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .talk {
     font-size: 1.4rem;
     line-height: 2rem;
@@ -1467,12 +1658,12 @@ footer .k-container hr {
   font-size: 6.2rem;
   padding: 6.6rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .free {
     padding: 8.8rem 0 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .free h1 {
     font-size: 3.2rem;
     line-height: 4rem;
@@ -1481,7 +1672,7 @@ footer .k-container hr {
 .pricing .k-container .free p {
   padding: 1.2rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .free p {
     font-size: 1.8rem;
     line-height: 2.4rem;
@@ -1499,7 +1690,7 @@ footer .k-container hr {
   line-height: 2.2rem;
   letter-spacing: -0.02em;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing .k-container .free .saving p {
     font-size: 1.4rem;
   }
@@ -1558,7 +1749,7 @@ footer .k-container hr {
   background-image: url("/assets/images/grid.svg");
   background-color: var(--white);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing-detail {
     padding: 0 2rem;
   }
@@ -1568,10 +1759,15 @@ footer .k-container hr {
   margin-bottom: 13.2rem;
   gap: 3.6rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing-detail .k-container .k-row {
     gap: 2.4rem;
     margin-bottom: 8.8rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .pricing-detail .k-container .k-row {
+    justify-content: center;
   }
 }
 .pricing-detail .k-container .k-row .card {
@@ -1579,6 +1775,12 @@ footer .k-container hr {
   border: 1px solid rgba(0, 0, 0, 0.24);
   border-radius: 1rem 1rem 1rem 1rem;
   flex: 1;
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .pricing-detail .k-container .k-row .card {
+    flex: unset;
+    width: 70%;
+  }
 }
 .pricing-detail .k-container .k-row .card .card-wrap {
   padding: 4rem 3.2rem;
@@ -1598,7 +1800,7 @@ footer .k-container hr {
   text-align: start;
   padding: 1.6rem 0 4.4rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .pricing-detail .k-container .k-row .card .card-wrap .sub-title {
     font-size: 1.6rem;
   }
@@ -1641,7 +1843,12 @@ footer .k-container hr {
 .pricing-detail .k-container .k-row .pro-border {
   border-radius: 0rem 0rem 1rem 1rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .pricing-detail .k-container .k-row .pro-border {
+    margin-top: 4.8rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .pricing-detail .k-container .k-row .pro-border {
     margin-top: 4.8rem;
   }
@@ -1668,7 +1875,7 @@ footer .k-container hr {
   position: relative;
   overflow: hidden;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .help {
     padding: 0 2rem;
   }
@@ -1690,7 +1897,7 @@ footer .k-container hr {
   right: -21%;
   top: 30%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .help .bg-1,
   .help .bg-2 {
     width: 91.2rem;
@@ -1714,7 +1921,7 @@ footer .k-container hr {
   border-radius: 1rem;
   background-image: url("/assets/images/grid.svg");
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .help .k-container {
     padding: 3.2rem;
     height: 43.2rem;
@@ -1725,7 +1932,7 @@ footer .k-container hr {
   line-height: 4.4rem;
   color: white;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .help .k-container h3 {
     font-size: 2.4rem;
     line-height: 3rem;
@@ -1749,7 +1956,7 @@ footer .k-container hr {
   background-color: var(--white);
   padding-top: 13.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer {
     padding-top: 8.8rem;
   }
@@ -1760,7 +1967,7 @@ footer .k-container hr {
   padding-bottom: 5.2rem;
   text-align: center;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .txt {
     font-weight: 500;
     font-size: 2rem;
@@ -1775,39 +1982,46 @@ footer .k-container hr {
   gap: 7.5rem;
   padding: 5.2rem 0 0 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands {
     flex-wrap: wrap;
     gap: 4rem;
     padding: 0 0 0;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .customer .k-container .brands {
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 0 0 0;
+  }
+}
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands img {
     width: max-content;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands .forbes {
     width: 11rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands .ted {
     width: 8.1rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands .cb {
     width: 5.2rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands .ycombinator {
     width: 17.2rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .customer .k-container .brands .clutch {
     width: 11.5rem;
   }
@@ -1818,9 +2032,19 @@ footer .k-container hr {
   background-color: var(--accordion-color);
   padding: 8rem 11.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .brand-k-clients {
     padding: 7.2rem 0rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .brand-k-clients {
+    padding: 8.2rem 5rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .brand-k-clients {
+    padding: 8rem 2rem;
   }
 }
 .brand-k-clients h2 {
@@ -1830,12 +2054,12 @@ footer .k-container hr {
   line-height: 3.2rem;
   color: var(--black161);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .brand-k-clients h2 {
     margin-bottom: 4.4rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .brand-k-clients .k-row {
     padding: 0 6.5rem;
     gap: 3.2rem;
@@ -1845,11 +2069,16 @@ footer .k-container hr {
     height: 2.5rem;
   }
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .brand-k-clients .k-row {
+    gap: 3.2rem;
+  }
+}
 .review-bg {
   background-image: url("/assets/images/grid.svg");
   padding-bottom: 9.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .review-bg {
     padding-bottom: 8.8rem;
   }
@@ -1860,7 +2089,17 @@ footer .k-container hr {
   background-image: url("/assets/images/grid.svg");
   background-color: var(--white);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .plan {
+    display: none;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .plan {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
   .plan {
     display: none;
   }
@@ -2053,12 +2292,17 @@ footer .k-container hr {
   overflow: hidden;
   padding: 25rem 0rem 25rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .about {
     padding: 11.4rem 2rem 8.8rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .about {
+    padding: 25rem 2rem 25rem;
+  }
+}
+@media only screen and (max-width: 480.5px) {
   .about .k-container {
     text-align: start;
   }
@@ -2068,7 +2312,7 @@ footer .k-container hr {
   line-height: 8rem;
   padding: 2rem 0rem 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .about .about-title {
     line-height: unset;
     padding: 2.4rem 0rem 2.4rem;
@@ -2076,7 +2320,7 @@ footer .k-container hr {
     line-height: 4rem;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .about p {
     font-size: 1.8rem;
   }
@@ -2087,7 +2331,17 @@ footer .k-container hr {
   background-image: url("/assets/images/grid.svg");
   padding: 8rem 0 0 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .our-story {
+    padding: 8rem 2rem 0;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .our-story {
+    padding: 8rem 2rem 0;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
   .our-story {
     padding: 8rem 2rem 0;
   }
@@ -2116,7 +2370,7 @@ footer .k-container hr {
   padding-bottom: 13.2rem;
   color: #000000;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .our-story .co-founder {
     padding-bottom: 8.8rem;
   }
@@ -2126,15 +2380,25 @@ footer .k-container hr {
   background-color: var(--bg-color);
   padding: 9.2rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .our-values {
     padding: 8.8rem 2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .our-values {
+    padding: 8rem 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .our-values {
+    padding: 8rem 2rem;
   }
 }
 .our-values .k-container .k-row {
   align-items: start;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .our-values .k-container .k-row {
     flex-direction: column;
     gap: 3.6rem;
@@ -2145,7 +2409,7 @@ footer .k-container hr {
   font-size: 6rem;
   line-height: 5.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .our-values .k-container .k-row .left {
     font-size: 3.2rem;
     line-height: 4rem;
@@ -2160,7 +2424,7 @@ footer .k-container hr {
   /* identical to box height, or 131% */
   letter-spacing: -0.006em;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .our-values .k-container .k-row .create {
     font-size: 2.4rem;
     line-height: 2.4rem;
@@ -2178,9 +2442,19 @@ footer .k-container hr {
   background-image: url("/assets/images/grid.svg");
   padding: 13.2rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faces {
     padding: 8.8rem 2rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .faces {
+    padding: 8rem 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .faces {
+    padding: 8rem 2rem;
   }
 }
 .faces .k-container p {
@@ -2191,7 +2465,7 @@ footer .k-container hr {
 .faces .k-container p span {
   color: #a4a4a4;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faces .k-container p {
     font-size: 3.4rem;
     line-height: 4rem;
@@ -2200,7 +2474,7 @@ footer .k-container hr {
 .faces .k-container .k-row {
   align-items: flex-start;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faces .k-container .k-row {
     flex-direction: column;
     align-items: center;
@@ -2210,7 +2484,7 @@ footer .k-container hr {
 .faces .k-container .k-row .team-card {
   width: 31%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faces .k-container .k-row .team-card {
     width: 100%;
   }
@@ -2223,7 +2497,7 @@ footer .k-container hr {
   line-height: 32px;
   padding: 2.4rem 0 1rem 0;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .faces .k-container .k-row .founder-name {
     font-size: 2.2rem;
   }
@@ -2234,9 +2508,19 @@ footer .k-container hr {
   background-color: var(--white);
   padding: 20.5rem 0rem 13.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .blog {
     padding: 11.4rem 2rem 8.8rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .blog {
+    padding: 20.5rem 2rem 13.2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .blog {
+    padding: 20.5rem 2rem 13.2rem;
   }
 }
 .blog .latest {
@@ -2254,7 +2538,7 @@ footer .k-container hr {
   line-height: 8rem;
   padding: 2rem 0rem 1.6rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .blog .blog-title {
     padding: 2.4rem 0rem 2.4rem;
     font-size: 3.4rem;
@@ -2266,7 +2550,7 @@ footer .k-container hr {
   line-height: 3.8rem;
   padding-bottom: 13.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .blog .blog-subtitle {
     font-size: 1.8rem;
     line-height: 2.7rem;
@@ -2278,9 +2562,21 @@ footer .k-container hr {
   background-image: url("/assets/images/grid.svg");
   background-color: var(--white);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .issues {
     padding: 0 2rem 8.8rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .issues {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .issues {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 .issues .k-container .k-row {
@@ -2291,7 +2587,12 @@ footer .k-container hr {
 .issues .k-container .k-row .right {
   flex: 1;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
+  .issues .k-container .k-row {
+    display: block;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
   .issues .k-container .k-row {
     display: block;
   }
@@ -2312,9 +2613,19 @@ footer .k-container hr {
   width: 683px;
   height: 0px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .issues .k-container .k-row .left .line {
     width: calc(100% - 10rem);
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .issues .k-container .k-row .left .line {
+    width: calc(100% - 10rem);
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .issues .k-container .k-row .left .line {
+    width: 100%;
   }
 }
 .issues .k-container .k-row .left .content .content-title {
@@ -2322,7 +2633,7 @@ footer .k-container hr {
   line-height: 42px;
   padding: 0 0 1.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .issues .k-container .k-row .left .content .content-title {
     font-size: 3.2rem;
     line-height: 4rem;
@@ -2371,10 +2682,30 @@ footer .k-container hr {
   width: 28.8rem;
   height: 0px;
 }
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .issues .k-container .k-row .right .line {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .issues .k-container .k-row .right .line {
+    width: 100%;
+  }
+}
 .issues .k-container .k-row .right .line1 {
   border: 0.5px solid rgba(0, 0, 0, 0.24);
   width: 27rem;
   height: 0px;
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .issues .k-container .k-row .right .line1 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .issues .k-container .k-row .right .line1 {
+    width: 100%;
+  }
 }
 .issues .k-container .k-row .right .about-korrect {
   display: flex;
@@ -2441,16 +2772,26 @@ footer .k-container hr {
   background-color: var(--white);
   padding: 20.5rem 0rem 9.2rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .singleblog {
     padding: 11.4rem 2rem 8.8rem;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .singleblog {
+    padding: 20.5rem 2rem 9.2rem;
   }
 }
 .singleblog .k-container .center {
   width: 78rem;
   margin: 0 auto;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .singleblog .k-container .center {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480.5px) {
   .singleblog .k-container .center {
     width: unset;
   }
@@ -2468,7 +2809,7 @@ footer .k-container hr {
   line-height: 8rem;
   padding-bottom: 4rem;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480.5px) {
   .singleblog .k-container .center .blog-title {
     padding: 2.4rem 0rem 2.4rem;
     font-size: 3.4rem;

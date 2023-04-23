@@ -8,11 +8,19 @@
   @include smallmobile {
     padding: 11.4rem 2rem 8.8rem;
   }
+
+  @include tablet {
+    padding: 20.5rem 2rem 9.2rem;
+  }
+
   .k-container {
     .center {
       width: 78rem;
       margin: 0 auto;
 
+      @include tablet {
+        width: 100%;
+      }
       @include smallmobile {
         width: unset;
       }
