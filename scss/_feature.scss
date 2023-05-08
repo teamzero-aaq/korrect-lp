@@ -200,6 +200,8 @@
         line-height: 2.2rem;
         letter-spacing: -0.006em;
         color: var(--primary);
+        font-family: "SharpGrotesk";
+        font-weight: 500;
       }
       .reason-title {
         font-weight: 600;
@@ -242,8 +244,9 @@
 }
 
 .happy {
-  background-color: var(--primary);
   padding: 10.2rem 10.2rem 0;
+  background-color: var(--primary);
+  background-image: url("/assets/images/grid.svg");
 
   @include smallmobile {
     padding: 7.2rem 2rem 0;

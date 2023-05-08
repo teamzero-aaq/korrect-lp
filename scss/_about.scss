@@ -54,6 +54,19 @@
   background-image: url("/assets/images/grid.svg");
   padding: 8rem 0 0 0;
 
+  .k-container {
+    margin: 0 24rem;
+    @include smallmobile {
+      margin: 0;
+    }
+    @include tablet {
+      margin: 0;
+    }
+    @include laptop {
+      margin: 0;
+    }
+  }
+
   @include smallmobile {
     padding: 8rem 2rem 0;
   }

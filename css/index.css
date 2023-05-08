@@ -1400,6 +1400,8 @@ footer .k-container hr {
   line-height: 2.2rem;
   letter-spacing: -0.006em;
   color: var(--primary);
+  font-family: "SharpGrotesk";
+  font-weight: 500;
 }
 .feedback-reasons .k-grid .item .reason-title {
   font-weight: 600;
@@ -1430,8 +1432,9 @@ footer .k-container hr {
 }
 
 .happy {
-  background-color: var(--primary);
   padding: 10.2rem 10.2rem 0;
+  background-color: var(--primary);
+  background-image: url("/assets/images/grid.svg");
 }
 @media only screen and (max-width: 480.5px) {
   .happy {
@@ -1535,7 +1538,7 @@ footer .k-container hr {
   }
 }
 .pricing .k-container .pricing-banner {
-  background: var(--pricing);
+  background-color: rgba(185, 224, 228, 0.5);
   height: 28.2rem;
   border-radius: 1rem;
   display: flex;
@@ -1579,6 +1582,7 @@ footer .k-container hr {
   line-height: 3.6rem;
   color: var(--black242);
   padding: 1rem 0 1rem 0;
+  font-family: var(--primary);
 }
 @media only screen and (max-width: 480.5px) {
   .pricing .k-container .pricing-banner .lifetime-plan {
@@ -1662,6 +1666,9 @@ footer .k-container hr {
   .pricing .k-container .free {
     padding: 8.8rem 0 0;
   }
+}
+.pricing .k-container .free h1 {
+  font-size: 6.2rem;
 }
 @media only screen and (max-width: 480.5px) {
   .pricing .k-container .free h1 {
@@ -1954,7 +1961,7 @@ footer .k-container hr {
 .customer {
   background-image: url("/assets/images/grid.svg");
   background-color: var(--white);
-  padding-top: 13.2rem;
+  padding-top: 14rem;
 }
 @media only screen and (max-width: 480.5px) {
   .customer {
@@ -1966,6 +1973,7 @@ footer .k-container hr {
   line-height: 32px;
   padding-bottom: 5.2rem;
   text-align: center;
+  font-family: "SharpGrotesk";
 }
 @media only screen and (max-width: 480.5px) {
   .customer .k-container .txt {
@@ -1980,7 +1988,6 @@ footer .k-container hr {
   justify-content: center;
   align-items: center;
   gap: 7.5rem;
-  padding: 5.2rem 0 0 0;
 }
 @media only screen and (max-width: 480.5px) {
   .customer .k-container .brands {
@@ -2053,6 +2060,7 @@ footer .k-container hr {
   font-size: 2.4rem;
   line-height: 3.2rem;
   color: var(--black161);
+  font-family: "SharpGrotesk";
 }
 @media only screen and (max-width: 480.5px) {
   .brand-k-clients h2 {
@@ -2330,6 +2338,24 @@ footer .k-container hr {
   background-color: white;
   background-image: url("/assets/images/grid.svg");
   padding: 8rem 0 0 0;
+}
+.our-story .k-container {
+  margin: 0 24rem;
+}
+@media only screen and (max-width: 480.5px) {
+  .our-story .k-container {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 480.5px) and (max-width: 768.5px) {
+  .our-story .k-container {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768.5px) and (max-width: 1200.5px) {
+  .our-story .k-container {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 480.5px) {
   .our-story {
